@@ -1,0 +1,39 @@
+
+.img_principal {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+}
+
+.central_funcao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .imgs_funcoes {
+    text-align: center;
+  }
+  
+  .imgs_lados {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px ;
+  }
+  
+  .fotos_dog {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .nomes{
+    font-size: 2vw;
+  }
+  
