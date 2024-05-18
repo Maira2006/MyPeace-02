@@ -3,7 +3,7 @@ import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Login from './Pages/Login'
 import CadastroPsicologo from './Pages/CadastroPsicologo'
-
+import PacienteHome from './Pages/PacienteHome' /*Ainda não foi feita a rota.*/
 
 function App() {
   const [count, setCount] = useState(0)
