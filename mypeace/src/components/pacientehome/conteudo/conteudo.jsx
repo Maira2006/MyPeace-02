@@ -1,7 +1,10 @@
-
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './conteudo.css';
 
-export default function Conteudo() {
+const PacienteHome = () => {
+  const navigate = useNavigate();
+
   const days = [
     [1, 2, 3, 4, 5, 6, 7],
     [8, 9, 10, 11, 12, 13, 14],
@@ -10,9 +13,14 @@ export default function Conteudo() {
     [29, 30, 31, '', '', '', ''],
   ];
 
+  const handleClick = (day) => {
+    if (day) {
+      navigate(`/diario/${day}`);
+    }
+  };
+
   return (
     <div className="calendar">
-      
       <main className="main">
         <h2>Diário:</h2>
         <p>Selecione um dia:</p>
@@ -32,16 +40,15 @@ export default function Conteudo() {
             {days.map((week, weekIndex) => (
               <tr key={weekIndex}>
                 {week.map((day, dayIndex) => (
-                  <td key={dayIndex}>{day}</td>
+                  <td key={dayIndex} onClick={() => handleClick(day)}>{day}</td>
                 ))}
               </tr>
             ))}
           </tbody>
         </table>
       </main>
-     
     </div>
   );
-}
+};
 
-
+export default PacienteHome;

@@ -1,3 +1,7 @@
+import fotocadastro from '../Cadconteudo/fotocadastro.png';
+import emailIcon from '../Cadconteudo/email_icon.png';
+import passowdIcon from '../Cadconteudo/password_icon.png';
+
 import './conteudo.css'
 function Conteudo() {
     return (
@@ -5,34 +9,34 @@ function Conteudo() {
             
 
             <div className="login-container">
-  <img src="image 10.png" alt="" className="user"/>
+  <img src={fotocadastro} alt="" className="user"/>
   <form action="#" method="post">
     <div className="input-group">
-      <img src="email_icon.png" alt="Email Icon" />
+    <img src={emailIcon} alt="Email Icon" />
       <input type="text" name="email" placeholder="Nome" required/>
     </div>
     <div className="input-group">
-        <img src="email_icon.png" alt="Email Icon"/>
+    <img src={emailIcon} alt="Email Icon" />
         <input type="text" name="email" placeholder="Email" required/>
       </div>
 
       <div className="input-group">
-        <img src="email_icon.png" alt="Email Icon"/>
+      <img src={emailIcon} alt="Email Icon" />
         <input type="text" name="cpf" placeholder="CPF" required/>
       </div>
 
     <div className="input-group">
-      <img src="password_icon.png" alt="Password Icon"/>
+      <img src={passowdIcon}alt="Password Icon"/>
       <input type="password" name="password" placeholder="Numero de Registro" required/>
     </div>
     <div className="input-group">
-        <img src="password_icon.png" alt="Password Icon"/>
+        <img src={passowdIcon}alt="Password Icon"/>
         <input type="password" name="password" placeholder="Password" required/>
    
       </div>
 
 <div className="input-group">
-      <img src="password_icon.png" alt="Password Icon"/>
+      <img src={passowdIcon}alt="Password Icon"/>
       <input type="password" name="password" placeholder="Confirmar Senha" required/>
  
     </div>
